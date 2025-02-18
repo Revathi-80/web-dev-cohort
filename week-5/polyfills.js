@@ -1,3 +1,4 @@
+// Polyfill - ForEach
 if (!Array.prototype.myForEach) {
   Array.prototype.myForEach = function (userFn) {
     const originalArr = this; // points to the current object
@@ -7,6 +8,7 @@ if (!Array.prototype.myForEach) {
   };
 }
 
+// Polyfill - Map
 if (!Array.prototype.myMap) {
   Array.prototype.myMap = function (userFn) {
     const result = [];
@@ -19,6 +21,7 @@ if (!Array.prototype.myMap) {
   };
 }
 
+// Polyfill - Filter
 if (!Array.prototype.myFilter) {
   Array.prototype.myFilter = function (userFn) {
     const result = [];
